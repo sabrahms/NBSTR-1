@@ -1,0 +1,25 @@
+#navbar {
+    border:1px none #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    margin-top: 200px;
+    text-transform: uppercase;
+}
+
+.a-nav {
+    display: inline-block;
+    
+}
+
+.container-1 {
+    height: 500px;
+    width: auto;
+}
+
+a:hover {
+    display: inline-block;
+    text-decoration: none;
+}

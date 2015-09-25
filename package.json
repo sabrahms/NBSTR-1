@@ -1,0 +1,25 @@
+{
+  "name": "nbstr-1",
+  "version": "1.0.0",
+  "description": "A single page app for new beginnings rescue",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabrahms/NBSTR-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabrahms/NBSTR-1/issues"
+  },
+  "homepage": "https://github.com/sabrahms/NBSTR-1#readme"
+}
