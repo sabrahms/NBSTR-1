@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>NBSTR</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -16,24 +17,30 @@
 </head>
 
 <body>
-    <h1 style="text-align: center">New Beginnings Shih Tzu Rescue</h1>
-    
+
+    <div class="image-area">
+        <img src="/images/logo-v3.png" alt="logo" width="140" height="140">
     <nav id="navbar">
-        <a ui-sref="main">Home</a>
-        <a ui-sref="dogs">Our Dogs</a>
-        <a ui-sref="donate">Donate</a>
-        <a ui-sref="volunteer">Volunteer</a>
-        <a ui-sref="events">Events</a>
-        <a ui-sref="about">About</a>
-        <a ui-sref="surrender">Owner Surrender</a>
-    </nav>
+        <a class="nav-main" ui-sref="main">Home</a>
+        <a class="nav-main" ui-sref="dogs">Our Dogs</a>
+        <a class="nav-main" ui-sref="donate">Donate</a>
+        <a class="nav-main" ui-sref="volunteer">Volunteer</a>
+        <a class="nav-main" ui-sref="events">Events</a>
+        <a class="nav-main" ui-sref="about">About</a>
+        <a class="nav-main" ui-sref="surrender">Owner Surrender</a>
+    </nav>   
+    </div>
     
     <div class="container">
         <div ui-view></div>
     </div>
-
-
- 
-    
+    <footer>
+        <div class="footer-mail">
+            <p> Mailing Address<br>
+            New Beginnings Shih Tzu Rescue <br>
+            PO Box 583 <br>
+            Menomonee Falls, WI 53052 </p>
+        </div>
+    </footer>    
 </body>
 </html>
