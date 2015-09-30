@@ -10,7 +10,7 @@
     padding: 0;
     text-align: center;
     display: block;
-    border-bottom: 5px solid rgb(0,0,0);
+/*    border-bottom: 5px solid rgb(0,0,0);*/
     padding-bottom: 8px;
 }
 
@@ -33,6 +33,7 @@ iframe {
     text-align: center;
 }
 
+/*
 .nav-main {
     color: black;
     padding: 10px;
@@ -44,7 +45,7 @@ iframe {
     text-decoration: none;
     background-color: #FFFF66;
     padding: 10px;
-    padding-top: 65px;
+    padding-top: 10px;
     border-radius: 5px;
     border-bottom-color: #FFFF66;
 }
@@ -56,6 +57,7 @@ iframe {
     padding: 10px;
     border-radius: 5px;
     border-bottom-color: #FFFF75;
+*/
 }
 
 /* Main Body Text Area */
@@ -65,20 +67,14 @@ iframe {
 }
 
 /* Home Title */
-#home-title {
-    font-size: 8em;
-    padding: ;
-}
+
+
 .container-1 {
     width: 50%;
     height: 50%;
 }
 
-.footer-mail {
-    padding: 10px;
-    text-align: center;
-}
-
-.image-area {
-    display: inline;   
+#body-content {
+    height: 600px;
+    width: 600px;
 }
