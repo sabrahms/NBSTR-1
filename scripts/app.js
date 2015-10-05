@@ -35,5 +35,9 @@ app.config(function($stateProvider, $locationProvider) {
         .state("surrender", {
         url: "/owner-surrender",
         templateUrl: "/templates/surrender.html"
+    })
+        .state("adoption application", {
+        url: "/adoption-application",
+        templateUrl: "/templates/adoption-app.html"
     });
 });
