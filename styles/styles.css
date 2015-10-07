@@ -1,19 +1,33 @@
 .row-centered {
-    text-align:center;
+    text-align: center;
 }
 
 .col-centered {
-    display:inline-block;
-    float:none;
-    text-align:center;
+    display: inline-block;
+    float: none;
+    text-align: center;
     margin-right:-4px;
 }
 
 .navbar .navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar .navbar-nav li {
+    display: inline-block;
+    float: none;
+    vertical-align: top; 
+}
+
+.navbar .navbar-nav li:hover {
+    background-color: rgb(253, 239, 105);
     display: inline-block;
     float: none;
     vertical-align: top;
-    
+}
+
+div ul li {
+ list-style-type: none;
 }
 
 .navbar .navbar-collapse {
@@ -25,31 +39,47 @@ iframe {
     margin: 0 auto;
 }
 
-.image-area {
-    position: auto;
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/images/dog.png) no-repeat;
+    background-size: cover; 
 }
 
-
- Main Body Text Area 
 .main-body {
-    border-top: 5px solid rgb(181, 181, 181);
-    padding-top: 10px;
+    width: auto;
+    margin: auto;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 1px 1px 75px 5px #888888;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* Home Title */
-
-
-.container-1 {
-    width: 50%;
-    height: 50%;
+.image img {
+    position: fixed;
+    right: 0;
+    left: 10px;
+    z-index: 1040;
 }
 
-#body-content {
-    height: 600px;
-    width: 600px;
+
+
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(/images/dog.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }

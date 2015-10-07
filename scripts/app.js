@@ -41,3 +41,4 @@ app.config(function($stateProvider, $locationProvider) {
         templateUrl: "/templates/adoption-app.html"
     });
 });
+

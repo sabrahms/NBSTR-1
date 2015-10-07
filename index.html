@@ -14,16 +14,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="scripts/app.js"></script>
 </head>
 
 <body>
-
-    <div class="image-area">
-        <img src="/images/logo-v3.png" alt="logo" width="140" height="140">
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="image">
+        <img src="/images/logo-v3.png" alt="logo" width="160" height="160">
     </div>
-    <nav class="navbar navbar-default">
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -31,11 +39,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-      
-    
         </div>
+        
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-fixed-top">
                 <li><a ui-sref="main">Home</a></li>
                 <li><a ui-sref="dogs">Our Dogs</a></li>
                 <li><a ui-sref="donate">Donate</a></li>
@@ -46,19 +53,14 @@
             </ul>
         </div>
     </nav>   
-    </div>
     
     <div class="container">
         <div ui-view></div>
     </div>
 <!--
-    <footer>
-        <div class="col-md-4">
-            <p> Mailing Address<br>
-            New Beginnings Shih Tzu Rescue <br>
-            PO Box 583 <br>
-            Menomonee Falls, WI 53052 </p>
-        <div class="col-md-4"></div>    
+    <footer class="nav navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="fb-follow" data-href="https://www.facebook.com/New-Beginnings-Shih-Tzu-Rescue-198565472445/timeline/" data-width="auto;" data-height="100" text-align="center" data-layout="standard" data-show-faces="true"></div>   
         </div>
     </footer>    
 -->
