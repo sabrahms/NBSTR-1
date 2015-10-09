@@ -42,3 +42,11 @@ app.config(function($stateProvider, $locationProvider) {
     });
 });
 
+$(function () {
+    $('.nav a').click(function(){
+        $('.nav a').each(function() {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+    });
+});

@@ -1,3 +1,7 @@
+* {
+ font-family: 'Montserrat', sans-serif;   
+}
+
 .row-centered {
     text-align: center;
 }
@@ -16,7 +20,11 @@
 .navbar .navbar-nav li {
     display: inline-block;
     float: none;
-    vertical-align: top; 
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 0px;
+    transition: 0.3s
 }
 
 .navbar .navbar-nav li:hover {
@@ -55,24 +63,76 @@ video#bgvid {
 }
 
 .main-body {
-    width: auto;
-    margin: auto;
-    padding: 25px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-right: 2.5%;
+    min-height: 55%;
+    padding: 5px;
     background: #fff;
-    box-shadow: 1px 1px 75px 5px #888888;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+}
+.main-body a {
+    display: inline;
+    text-decoration: none;
+    color: #000000;
+}
+.main-body a:hover {
+    display: inline;
+    background-color: rgb(253, 239, 105);
+    text-decoration: none;
+}
+
+.nav a.active {
+    background-color: rgb(253, 239, 105);
 }
 
 .image img {
-    position: fixed;
+    position: absolute;
     right: 0;
-    left: 10px;
+    left: 5%;
     z-index: 1040;
 }
 
+#link-dogs {
+    display: block;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font-size: .40em;
+    text-align: center;
+    color: #fff;
+    padding-left: 2%;
+    padding-right: 2%;
+}
 
+#link-dogs:hover {
+    display: block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.20);
+    color: #fff;
+}
+
+#main-head-title1 {
+    position: fixed;
+    display: block;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    height: 30%; 
+    width: 50%%;
+    line-height: .99em;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-left: 56%;
+    margin-bottom: 30%;
+    color: #fff;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+    
 
 
 @media screen and (max-device-width: 800px) {
@@ -82,4 +142,13 @@ video#bgvid {
     #bgvid {
         display: none;
     }
+}
+    
+
+@media (min-width: 40rem) {
+    html { font-size: 112%; }
+}
+
+@media (min-width: 64rem) {
+    html { font-size: 120%; }
 }
